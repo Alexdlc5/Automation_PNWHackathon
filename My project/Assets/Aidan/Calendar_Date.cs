@@ -13,4 +13,9 @@ public class Calendar_Date
         Month = month;
         Year = year;
     }
+
+    public bool Equals(Calendar_Date other)
+    {
+        return Year == other.Year && Month == other.Month && Day == other.Day;
+    }
 }

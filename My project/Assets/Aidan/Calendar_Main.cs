@@ -33,4 +33,17 @@ public class Calendar_Main : MonoBehaviour
     }
 
     public List<Calendar_Event> GetEvents() { return Events; }
+
+    public List<Calendar_Event> GetEventsOnDate(Calendar_Date date)
+    {
+        List<Calendar_Event> returner = new List<Calendar_Event>();
+        foreach (Calendar_Event CE in Events)
+        {
+            if (CE.Date.Equals(date))
+            {
+                returner.Add(CE);
+            }
+        }
+        return returner;
+    }
 }
