@@ -8,15 +8,15 @@ public class Task
     private string name = "";
     private float time = 0;
     private string description = "";
-    private int dueDate = 0;
+    private int timeLeft = 0;
     // Start is called before the first frame update
-    public Task(int priority, string name, float time, string description, int dueDate)
+    public Task(int priority, string name, float time, string description, int timeLeft)
     {
         this.priority = priority;
         this.name = name;
         this.time = time;
         this.description = description;
-        this.dueDate = dueDate;
+        this.timeLeft = timeLeft;
     }
 
     public void setPriority(int priority)
@@ -39,9 +39,9 @@ public class Task
         this.description = description;
     }
 
-    public void setDueDate(int dueDate)
+    public void setTimeLeft(int timeLeft)
     {
-        this.dueDate = dueDate;
+        this.timeLeft = timeLeft;
     }
 
     public int getPriority()
@@ -64,11 +64,12 @@ public class Task
         return description;
     }
 
-    public int getDueDate()
+    public int getTimeLeft()
     {
-        return dueDate;
+        return timeLeft;
     }
 
+    
 
 
 
