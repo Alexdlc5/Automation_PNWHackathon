@@ -25,37 +25,12 @@ public class Mouse_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        findTask();
+        findPoint();
+        //get closest point
+        mouse_position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (!over_button && GameObject.FindGameObjectWithTag("Task") != null)
         {
-            //get closest point
-            mouse_position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            foreach (GameObject sp in snap_points)
-            {
-                if (closest_point == null)
-                {
-                    closest_point = sp;
-                }
-                //if distance from mouse is less than current closest
-                else if (Vector2.Distance(Camera.main.ScreenToWorldPoint(closest_point.transform.position), mouse_position) > Vector2.Distance(Camera.main.ScreenToWorldPoint(sp.transform.position), mouse_position))
-                {
-                    closest_point = sp;
-                }
-            }
-            //find closest task
-            tasks = GameObject.FindGameObjectsWithTag("Task");
-            foreach (GameObject t in tasks)
-            {
-                if (closest_task == null)
-                {
-                    closest_task = t;
-                }
-                //if distance from mouse is less than current closest
-                else if (Vector2.Distance(Camera.main.ScreenToWorldPoint(closest_task.transform.position), mouse_position) > Vector2.Distance(Camera.main.ScreenToWorldPoint(t.transform.position), mouse_position))
-                {
-                    closest_task = t;
-                }
-            }
-
             if (is_task_held)
             {
                 task.transform.position = Camera.main.WorldToScreenPoint(mouse_position);
@@ -76,5 +51,37 @@ public class Mouse_Manager : MonoBehaviour
         }
         closest_task = null;
         closest_point = null;
+    }
+    public void findTask()
+    {
+        //find closest task
+        tasks = GameObject.FindGameObjectsWithTag("Task");
+        foreach (GameObject t in tasks)
+        {
+            if (closest_task == null)
+            {
+                closest_task = t;
+            }
+            //if distance from mouse is less than current closest
+            else if (Vector2.Distance(Camera.main.ScreenToWorldPoint(closest_task.transform.position), mouse_position) > Vector2.Distance(Camera.main.ScreenToWorldPoint(t.transform.position), mouse_position))
+            {
+                closest_task = t;
+            }
+        }
+    }
+    public void findPoint()
+    {
+        foreach (GameObject sp in snap_points)
+        {
+            if (closest_point == null)
+            {
+                closest_point = sp;
+            }
+            //if distance from mouse is less than current closest
+            else if (Vector2.Distance(Camera.main.ScreenToWorldPoint(closest_point.transform.position), mouse_position) > Vector2.Distance(Camera.main.ScreenToWorldPoint(sp.transform.position), mouse_position))
+            {
+                closest_point = sp;
+            }
+        }
     }
 }
