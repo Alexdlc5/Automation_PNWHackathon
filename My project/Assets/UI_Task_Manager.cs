@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class snap_point : MonoBehaviour
+public class UI_Task_Manager : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
