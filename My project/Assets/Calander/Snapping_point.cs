@@ -11,8 +11,7 @@ public class Snapping_point : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     {
         manager.over_point = true;
         pointerover = false;
-}
-
+    }
     public void OnPointerEnter(PointerEventData eventData)
     {
         manager.over_point = true;
