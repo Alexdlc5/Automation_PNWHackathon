@@ -54,9 +54,12 @@ public class Mouse_Manager : MonoBehaviour
             //task held and user trys to drop task
             else if (Input.GetMouseButtonDown(0) && is_task_held && over_point)
             {
-                task.transform.position = closest_point.transform.position;
-                is_task_held = false;
-                task = null;
+                if (closest_point != null)
+                {
+                    task.transform.position = closest_point.transform.position;
+                    is_task_held = false;
+                    task = null;
+                }               
             }
 
         }
