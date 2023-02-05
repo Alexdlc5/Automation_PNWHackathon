@@ -10,10 +10,14 @@ public class Calendar_Main : MonoBehaviour
     [SerializeField] GameObject DayNumber;
     [SerializeField] Vector2 DayNumberOffset = Vector2.zero;
     [SerializeField] Mouse_Manager mouse_Manager;
+    [SerializeField] TMP_Text MonthText;
+    [SerializeField] TMP_Text YearText;
 
     [SerializeField] GameObject Canvas;
 
     List<GameObject> DayNumbers = new List<GameObject>();
+
+    private int NumberOfActiveDays;
 
     public int SelectedYear;
     [Range(1, 12)]
@@ -94,7 +98,12 @@ public class Calendar_Main : MonoBehaviour
 
         Calendar_Year SelYear = GetYear(year);
         Calendar_Month SelMonth = SelYear.GetMonth(SelectedMonth);
+        MonthText.text = SelMonth.GetName();
+        YearText.text = SelYear.GetYear().ToString();
+        NumberOfActiveDays = SelMonth.GetNumberOfDays();
 
+        Debug.Log("mouse_Manager.snap_points.Length:"+ mouse_Manager.snap_points.Length);
+        Debug.Log("SelMonth.GetNumberOfDays():" + SelMonth.GetNumberOfDays());
         for (int i = 0; i < mouse_Manager.snap_points.Length; i++)
         {
             if (i < SelMonth.GetNumberOfDays())
@@ -112,5 +121,10 @@ public class Calendar_Main : MonoBehaviour
                 mouse_Manager.snap_points[i].SetActive(false);
             }
         }
+    }
+
+    public int GetNumberOfActiveDays()
+    {
+        return NumberOfActiveDays;
     }
 }

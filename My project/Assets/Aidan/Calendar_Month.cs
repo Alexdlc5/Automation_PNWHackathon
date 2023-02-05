@@ -16,4 +16,9 @@ public class Calendar_Month
     {
         return Days.Length;
     }
+
+    public string GetName()
+    {
+        return Name;
+    }
 }
