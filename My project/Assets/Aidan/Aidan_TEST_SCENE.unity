@@ -254,8 +254,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &60366271
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,8 +520,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &174757312
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,8 +654,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &194681168
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,8 +923,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &343195572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1175,8 +1179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &430456519
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,8 +1313,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &448926489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,8 +1548,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &492216749
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,8 +2115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &595212328
 GameObject:
   m_ObjectHideFlags: 0
@@ -2511,8 +2519,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &688754471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,8 +2730,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &709525789
 GameObject:
   m_ObjectHideFlags: 0
@@ -2854,8 +2864,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &748685728
 GameObject:
   m_ObjectHideFlags: 0
@@ -2987,8 +2998,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &769586857
 GameObject:
   m_ObjectHideFlags: 0
@@ -3120,8 +3132,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &845010724
 GameObject:
   m_ObjectHideFlags: 0
@@ -3253,8 +3266,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &916280054
 GameObject:
   m_ObjectHideFlags: 0
@@ -3386,8 +3400,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1006371430
 GameObject:
   m_ObjectHideFlags: 0
@@ -3519,8 +3534,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1014320566
 GameObject:
   m_ObjectHideFlags: 0
@@ -3652,8 +3668,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1017559607
 GameObject:
   m_ObjectHideFlags: 0
@@ -3920,8 +3937,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1036672654
 GameObject:
   m_ObjectHideFlags: 0
@@ -4005,7 +4023,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1036672657}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1357254467}
+        m_TargetAssemblyTypeName: Calendar_Main, Assembly-CSharp
+        m_MethodName: AddNewEventRequest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1036672657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4175,8 +4205,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1079037470
 GameObject:
   m_ObjectHideFlags: 0
@@ -4308,8 +4339,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1189778673
 GameObject:
   m_ObjectHideFlags: 0
@@ -4509,8 +4541,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1357254466
 GameObject:
   m_ObjectHideFlags: 0
@@ -4523,7 +4556,7 @@ GameObject:
   - component: {fileID: 1357254467}
   m_Layer: 0
   m_Name: Calendar Manager
-  m_TagString: Untagged
+  m_TagString: Calendar Handler
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4546,6 +4579,7 @@ MonoBehaviour:
   MonthText: {fileID: 1368719618}
   YearText: {fileID: 595212329}
   Canvas: {fileID: 2075421604}
+  EventCreationPopupPrefab: {fileID: 6944996811806575136, guid: 52f3b63b0cf9d7f42875785b684c245f, type: 3}
   SelectedYear: 2023
   SelectedMonth: 1
 --- !u!4 &1357254468
@@ -4829,8 +4863,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1406548094
 GameObject:
   m_ObjectHideFlags: 0
@@ -5084,8 +5119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1604891172
 GameObject:
   m_ObjectHideFlags: 0
@@ -5351,8 +5387,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1677352408
 GameObject:
   m_ObjectHideFlags: 0
@@ -5484,8 +5521,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1679056678
 GameObject:
   m_ObjectHideFlags: 0
@@ -6020,8 +6058,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1904125774
 GameObject:
   m_ObjectHideFlags: 0
@@ -6153,8 +6192,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1940905056
 GameObject:
   m_ObjectHideFlags: 0
@@ -6421,8 +6461,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1970864411
 GameObject:
   m_ObjectHideFlags: 0
@@ -6726,8 +6767,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &2011374892
 GameObject:
   m_ObjectHideFlags: 0
@@ -6965,8 +7007,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &2074456160
 GameObject:
   m_ObjectHideFlags: 0
@@ -7315,8 +7358,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &2147288584
 GameObject:
   m_ObjectHideFlags: 0

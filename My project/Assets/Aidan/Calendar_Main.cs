@@ -15,6 +15,8 @@ public class Calendar_Main : MonoBehaviour
 
     [SerializeField] GameObject Canvas;
 
+    [SerializeField] GameObject EventCreationPopupPrefab;
+
     List<GameObject> DayNumbers = new List<GameObject>();
 
     private int NumberOfActiveDays;
@@ -38,7 +40,7 @@ public class Calendar_Main : MonoBehaviour
             firstUpdate = false;
             SelectedYear = System.DateTime.Today.Year;
             SelectedMonth = System.DateTime.Today.Month;
-            Years.Add(System.DateTime.Today.Year, new Calendar_Year(System.DateTime.Today.Year));
+            //Years.Add(System.DateTime.Today.Year, new Calendar_Year(System.DateTime.Today.Year));
             GetYear(SelectedYear);
             SetupCalendar(SelectedYear);
 
@@ -140,6 +142,13 @@ public class Calendar_Main : MonoBehaviour
         return NumberOfActiveDays;
     }
 
+    public int GetMaxDays(int year, int month)
+    {
+        Calendar_Year temp = GetYear(year);
+        Calendar_Month tempM = temp.GetMonth(month);
+        return tempM.GetNumberOfDays();
+    }
+
     public void IncreaseMonth()
     {
         SelectedMonth += 1;
@@ -185,5 +194,10 @@ public class Calendar_Main : MonoBehaviour
             delta = 100;
         }
         SelectedYear -= delta;
+    }
+    public void AddNewEventRequest()
+    {
+        EventCreationPopupHandler temp = Instantiate(EventCreationPopupPrefab).GetComponent<EventCreationPopupHandler>();
+        temp.returnCall += (input) => { AddEventToCalendar(input); };
     }
 }
