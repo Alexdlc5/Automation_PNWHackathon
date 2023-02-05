@@ -25,7 +25,7 @@ public class Mouse_Manager : MonoBehaviour
         eventSystem = GameObject.Find("EventSystem").GetComponent<EventSystem>();
     }
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         snap_points = GameObject.FindGameObjectsWithTag("Snap_Points");
         findTask();
@@ -43,7 +43,7 @@ public class Mouse_Manager : MonoBehaviour
         {
             if (is_task_held)
             {
-                task.transform.position = Camera.main.WorldToScreenPoint(new Vector2(mouse_position.x - 1, mouse_position.y - 1));
+                task.transform.position = Camera.main.WorldToScreenPoint(new Vector2(mouse_position.x - 1.2f, mouse_position.y + 1.2f));
             }
             //no task held and user trys to pickup a task
             if (Input.GetMouseButtonDown(0) && !is_task_held)
