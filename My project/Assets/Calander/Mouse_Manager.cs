@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
 using UnityEngine.UI;
-using System.Security.Cryptography.X509Certificates;
 
 public class Mouse_Manager : MonoBehaviour
 {
@@ -17,7 +16,6 @@ public class Mouse_Manager : MonoBehaviour
     public GameObject closest_point;
     public bool over_button = false;
     private EventSystem eventSystem;
-    public bool over_point = false;
 
     private void Start()
     {
@@ -27,23 +25,15 @@ public class Mouse_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        snap_points = GameObject.FindGameObjectsWithTag("Snap_Points");
         findTask();
-        //findPoint();
-        foreach (GameObject point in snap_points)
-        {
-            if (point.GetComponent<Snapping_point>().pointerover)
-            {
-                closest_point = point;
-            }
-        }
+        findPoint();
         //get closest point
         mouse_position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (!over_button && GameObject.FindGameObjectWithTag("Task") != null)
         {
             if (is_task_held)
             {
-                task.transform.position = Camera.main.WorldToScreenPoint(new Vector2(mouse_position.x - 1, mouse_position.y - 1));
+                task.transform.position = Camera.main.WorldToScreenPoint(mouse_position);
             }
             //no task held and user trys to pickup a task
             if (Input.GetMouseButtonDown(0) && !is_task_held)
@@ -52,13 +42,12 @@ public class Mouse_Manager : MonoBehaviour
                 is_task_held = true;
             }
             //task held and user trys to drop task
-            else if (Input.GetMouseButtonDown(0) && is_task_held && over_point)
+            else if (Input.GetMouseButtonDown(0) && is_task_held)
             {
                 task.transform.position = closest_point.transform.position;
                 is_task_held = false;
                 task = null;
             }
-
         }
         closest_task = null;
         closest_point = null;
@@ -80,19 +69,19 @@ public class Mouse_Manager : MonoBehaviour
             }
         }
     }
-    //public void findPoint()
-    //{
-    //    foreach (GameObject sp in snap_points)
-    //    {
-    //        if (closest_point == null)
-    //        {
-    //            closest_point = sp;
-    //        }
-    //        //if distance from mouse is less than current closest
-    //        else if (Vector2.Distance(Camera.main.ScreenToWorldPoint(closest_point.transform.position), mouse_position) > Vector2.Distance(Camera.main.ScreenToWorldPoint(sp.transform.position), mouse_position))
-    //        {
-    //            closest_point = sp;
-    //        }
-    //    }
-    //}
+    public void findPoint()
+    {
+        foreach (GameObject sp in snap_points)
+        {
+            if (closest_point == null)
+            {
+                closest_point = sp;
+            }
+            //if distance from mouse is less than current closest
+            else if (Vector2.Distance(Camera.main.ScreenToWorldPoint(closest_point.transform.position), mouse_position) > Vector2.Distance(Camera.main.ScreenToWorldPoint(sp.transform.position), mouse_position))
+            {
+                closest_point = sp;
+            }
+        }
+    }
 }
