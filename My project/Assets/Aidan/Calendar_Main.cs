@@ -88,6 +88,18 @@ public class Calendar_Main : MonoBehaviour
         return returner;
     }
 
+    public bool DateHasEvents(Calendar_Date date)
+    {
+        foreach (Calendar_Event CE in Events)
+        {
+            if (CE.Date.Equals(date))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void SetupCalendar(int year)
     {
         foreach (GameObject go in DayNumbers)
@@ -126,5 +138,42 @@ public class Calendar_Main : MonoBehaviour
     public int GetNumberOfActiveDays()
     {
         return NumberOfActiveDays;
+    }
+
+    public void IncreaseMonth()
+    {
+        SelectedMonth = Mathf.Clamp(SelectedMonth + 1, 1, 12);
+    }
+
+    public void DecreaseMonth()
+    {
+        SelectedMonth = Mathf.Clamp(SelectedMonth - 1, 1, 12);
+    }
+
+    public void IncreaseYear()
+    {
+        int delta = 1;
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            delta = 10;
+        }
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.LeftControl))
+        {
+            delta = 100;
+        }
+        SelectedYear += delta;
+    }
+    public void DecreaseYear()
+    {
+        int delta = 1;
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            delta = 10;
+        }
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.LeftControl))
+        {
+            delta = 100;
+        }
+        SelectedYear -= delta;
     }
 }
