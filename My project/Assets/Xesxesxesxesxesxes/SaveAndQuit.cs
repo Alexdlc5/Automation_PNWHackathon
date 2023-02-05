@@ -17,9 +17,11 @@ public class SaveAndQuit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            //SaveSystem.Save(c., color);
+            SaveSystem.Save(c.Events, new float[]{rawImage.color.r, rawImage.color.g, rawImage.color.b}  );
             Application.Quit();
         }
     }

@@ -6,7 +6,7 @@ using TMPro;
 public class Calendar_Main : MonoBehaviour
 {
     public Dictionary<int, Calendar_Year> Years = new Dictionary<int, Calendar_Year>();
-    List<Calendar_Event> Events = new List<Calendar_Event>();
+    public List<Calendar_Event> Events = new List<Calendar_Event>();
     [SerializeField] GameObject DayNumber;
     [SerializeField] Vector2 DayNumberOffset = Vector2.zero;
     [SerializeField] Mouse_Manager mouse_Manager;
