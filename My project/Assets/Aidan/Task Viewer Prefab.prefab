@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 380544155378673864}
   - component: {fileID: 380544155378673865}
   - component: {fileID: 380544155378673866}
+  - component: {fileID: -2448548500148955246}
   m_Layer: 5
   m_Name: Task Viewer Prefab
   m_TagString: Untagged
@@ -301,6 +302,22 @@ MonoBehaviour:
   globalOffsetDist: 0
   itemSeperationDist: 0
   offsetDist: 0
+--- !u!114 &-2448548500148955246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380544155378673876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578fd529efcfa1c42a9d53bd73b026b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EventName: {fileID: 380544156134704454}
+  EventDescription: {fileID: 380544156808477804}
+  EventLocation: {fileID: 380544156862624365}
+  EventDate: {fileID: 380544156343309028}
 --- !u!1 &380544155658395979
 GameObject:
   m_ObjectHideFlags: 0

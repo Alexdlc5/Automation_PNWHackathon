@@ -18,4 +18,9 @@ public class Calendar_Date
     {
         return Year == other.Year && Month == other.Month && Day == other.Day;
     }
+
+    public override string ToString()
+    {
+        return Month.ToString() + "/" + Day.ToString() + "/" + Day.ToString();
+    }
 }
