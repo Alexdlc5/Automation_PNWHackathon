@@ -21,8 +21,20 @@ public class SaveAndQuit : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SaveSystem.Save(c.Events, new float[]{rawImage.color.r, rawImage.color.g, rawImage.color.b}  );
+            saveData save;
+            save.Events = c.Events;
+            save.color = rawImage.color;
+            UtilClass.SaveToFile(Application.persistentDataPath + "", "txt", "bingus", save);
+            //SaveSystem.Save(c.Events, new float[]{rawImage.color.r, rawImage.color.g, rawImage.color.b}  );
             Application.Quit();
         }
+    }
+
+    struct saveData
+    {
+        public List<Calendar_Event> Events;
+        public Color color;
+
+       
     }
 }
