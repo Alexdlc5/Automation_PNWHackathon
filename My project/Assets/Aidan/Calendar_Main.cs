@@ -142,12 +142,22 @@ public class Calendar_Main : MonoBehaviour
 
     public void IncreaseMonth()
     {
-        SelectedMonth = Mathf.Clamp(SelectedMonth + 1, 1, 12);
+        SelectedMonth += 1;
+        if (SelectedMonth > 12)
+        {
+            SelectedMonth = 1;
+            SelectedYear++;
+        }
     }
 
     public void DecreaseMonth()
     {
-        SelectedMonth = Mathf.Clamp(SelectedMonth - 1, 1, 12);
+        SelectedMonth -= 1;
+        if (SelectedMonth < 1)
+        {
+            SelectedMonth = 12;
+            SelectedYear--;
+        }
     }
 
     public void IncreaseYear()
