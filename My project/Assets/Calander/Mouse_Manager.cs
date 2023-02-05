@@ -27,6 +27,7 @@ public class Mouse_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        snap_points = GameObject.FindGameObjectsWithTag("Snap_Points");
         findTask();
         //findPoint();
         foreach (GameObject point in snap_points)
