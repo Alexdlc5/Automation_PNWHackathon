@@ -104,7 +104,7 @@ public class Calendar_Main : MonoBehaviour
                 temp.transform.parent = Canvas.transform;
                 temp.GetComponent<TMP_Text>().text = (i + 1).ToString();
                 temp.transform.position = mouse_Manager.snap_points[i].transform.position;
-                temp.transform.position += new Vector3(DayNumberOffset.x, DayNumberOffset.y, 0);
+                temp.transform.position += new Vector3(DayNumberOffset.x, DayNumberOffset.y, -5);
                 DayNumbers.Add(temp);
             }
             else
