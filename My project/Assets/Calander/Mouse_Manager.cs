@@ -43,7 +43,7 @@ public class Mouse_Manager : MonoBehaviour
         {
             if (is_task_held)
             {
-                task.transform.position = Camera.main.WorldToScreenPoint(new Vector2(mouse_position.x + 1.2f, mouse_position.y - 1.2f));
+                task.transform.position = Camera.main.WorldToScreenPoint(new Vector2(mouse_position.x + .2f, mouse_position.y - .2f));
             }
             //no task held and user trys to pickup a task
             if (Input.GetMouseButtonDown(0) && !is_task_held)
