@@ -18,7 +18,6 @@ public class Mouse_Manager : MonoBehaviour
     public bool over_button = false;
     private EventSystem eventSystem;
     public bool over_point = false;
-
     private void Start()
     {
         snap_points = GameObject.FindGameObjectsWithTag("Snap_Points");
@@ -27,7 +26,6 @@ public class Mouse_Manager : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        snap_points = GameObject.FindGameObjectsWithTag("Snap_Points");
         findTask();
         //findPoint();
         foreach (GameObject point in snap_points)
