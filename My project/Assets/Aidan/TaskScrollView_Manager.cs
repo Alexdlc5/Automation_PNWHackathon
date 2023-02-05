@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using UnityEngine;
 
 public class TaskScrollView_Manager : MonoBehaviour
@@ -53,5 +54,6 @@ public class TaskScrollView_Manager : MonoBehaviour
             EVH.setup(e);
             scrollviewHandler.addToChildDropDowns(tempDH);
         }
+        eventCount = Events.Count;
     }
 }
