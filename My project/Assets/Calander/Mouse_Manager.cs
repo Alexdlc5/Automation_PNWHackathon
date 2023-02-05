@@ -18,7 +18,6 @@ public class Mouse_Manager : MonoBehaviour
     public bool over_button = false;
     private EventSystem eventSystem;
     public bool over_point = false;
-
     private void Start()
     {
         snap_points = GameObject.FindGameObjectsWithTag("Snap_Points");
