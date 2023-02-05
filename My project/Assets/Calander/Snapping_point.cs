@@ -1,20 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class Snapping_point : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class Snapping_point : MonoBehaviour//, IPointerEnterHandler, IPointerExitHandler
 {
-    public Mouse_Manager manager;
+    public Day_Manager day_manager;
     public bool pointerover = false;
-    public void OnPointerExit(PointerEventData eventData)
+    public int day = 1;
+    private void Start()
     {
-        manager.over_point = true;
-        pointerover = false;
+        GetComponent<Button>().onClick.AddListener(setNewDay);
     }
-    public void OnPointerEnter(PointerEventData eventData)
+    private void setNewDay()
     {
-        manager.over_point = true;
-        pointerover = true;
+        day_manager.setCurrentDay(day);
     }
+    //public void OnPointerExit(PointerEventData eventData)
+    //{
+    //    manager.over_point = true;
+    //    pointerover = false;
+    //}
+    //public void OnPointerEnter(PointerEventData eventData)
+    //{
+    //    manager.over_point = true;
+    //    pointerover = true;
+    //}
 }

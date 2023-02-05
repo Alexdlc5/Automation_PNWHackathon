@@ -254,8 +254,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 11
 --- !u!1 &60366271
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,8 +518,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &174757312
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,8 +652,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 6
 --- !u!1 &194681168
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,8 +921,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &343195572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,8 +1177,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 8
 --- !u!1 &430456519
 GameObject:
   m_ObjectHideFlags: 0
@@ -1306,8 +1311,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &448926489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1540,8 +1546,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 9
 --- !u!1 &492216749
 GameObject:
   m_ObjectHideFlags: 0
@@ -2106,8 +2113,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &595212328
 GameObject:
   m_ObjectHideFlags: 0
@@ -2509,8 +2517,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 3
 --- !u!1 &688754471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2719,8 +2728,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 12
 --- !u!1 &709525789
 GameObject:
   m_ObjectHideFlags: 0
@@ -2852,8 +2862,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 14
 --- !u!1 &748685728
 GameObject:
   m_ObjectHideFlags: 0
@@ -2868,7 +2879,7 @@ GameObject:
   - component: {fileID: 748685732}
   - component: {fileID: 748685733}
   m_Layer: 5
-  m_Name: 'snap_point '
+  m_Name: snap_point
   m_TagString: Snap_Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2985,8 +2996,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &769586857
 GameObject:
   m_ObjectHideFlags: 0
@@ -3118,8 +3130,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &845010724
 GameObject:
   m_ObjectHideFlags: 0
@@ -3251,8 +3264,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &916280054
 GameObject:
   m_ObjectHideFlags: 0
@@ -3384,8 +3398,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1006371430
 GameObject:
   m_ObjectHideFlags: 0
@@ -3517,8 +3532,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1014320566
 GameObject:
   m_ObjectHideFlags: 0
@@ -3650,8 +3666,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 7
 --- !u!1 &1017559607
 GameObject:
   m_ObjectHideFlags: 0
@@ -3918,8 +3935,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 5
 --- !u!1 &1036672654
 GameObject:
   m_ObjectHideFlags: 0
@@ -4173,8 +4191,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 4
 --- !u!1 &1079037470
 GameObject:
   m_ObjectHideFlags: 0
@@ -4306,8 +4325,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1189778673
 GameObject:
   m_ObjectHideFlags: 0
@@ -4507,8 +4527,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1357254466
 GameObject:
   m_ObjectHideFlags: 0
@@ -4827,8 +4848,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1406548094
 GameObject:
   m_ObjectHideFlags: 0
@@ -5082,8 +5104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1604891172
 GameObject:
   m_ObjectHideFlags: 0
@@ -5349,8 +5372,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 2
 --- !u!1 &1677352408
 GameObject:
   m_ObjectHideFlags: 0
@@ -5482,8 +5506,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1887128069
 GameObject:
   m_ObjectHideFlags: 0
@@ -5615,8 +5640,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 15
 --- !u!1 &1904125774
 GameObject:
   m_ObjectHideFlags: 0
@@ -5748,8 +5774,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1951825492
 GameObject:
   m_ObjectHideFlags: 0
@@ -5881,8 +5908,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &1970864411
 GameObject:
   m_ObjectHideFlags: 0
@@ -6186,8 +6214,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 13
 --- !u!1 &2011374892
 GameObject:
   m_ObjectHideFlags: 0
@@ -6199,6 +6228,7 @@ GameObject:
   - component: {fileID: 2011374893}
   - component: {fileID: 2011374895}
   - component: {fileID: 2011374894}
+  - component: {fileID: 2011374896}
   m_Layer: 5
   m_Name: Calander
   m_TagString: Untagged
@@ -6294,6 +6324,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2011374892}
   m_CullTransparentMesh: 1
+--- !u!114 &2011374896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011374892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83df1a342392df44380b221439778666, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current_day: 1
+  calender_main: {fileID: 0}
 --- !u!1 &2059060757
 GameObject:
   m_ObjectHideFlags: 0
@@ -6425,8 +6469,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 1
 --- !u!1 &2074456160
 GameObject:
   m_ObjectHideFlags: 0
@@ -6775,8 +6820,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aeeedc0db596054c975f86d023f3dcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 60366272}
+  day_manager: {fileID: 0}
   pointerover: 0
+  day: 10
 --- !u!1 &2147288584
 GameObject:
   m_ObjectHideFlags: 0
