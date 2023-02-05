@@ -716,6 +716,7 @@ GameObject:
   - component: {fileID: 448926492}
   - component: {fileID: 448926491}
   - component: {fileID: 448926490}
+  - component: {fileID: 448926494}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -806,6 +807,32 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &448926494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448926489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f84fc7eb33fdd548b5399a5b7169587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHolder: 0
+  isCanvasOrUiItem: 1
+  dropDownImageFollowChildSize: 0
+  engaged: 0
+  mainImage: {fileID: 0}
+  dropDownBackgroundImage: {fileID: 0}
+  InteractionButton: {fileID: 0}
+  contentRectTransform: {fileID: 448926493}
+  childDropDowns:
+  - {fileID: 0}
+  ChildrenObjectHolder: {fileID: 0}
+  globalOffsetDist: 0
+  itemSeperationDist: 0
+  offsetDist: 0
 --- !u!1 &473266421
 GameObject:
   m_ObjectHideFlags: 0
