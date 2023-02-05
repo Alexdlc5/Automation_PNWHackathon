@@ -37,6 +37,13 @@ public class SaveAndQuit : MonoBehaviour
         }
     }
 
+    private void OnApplicationQuit()
+    {
+        saveData save;
+        save.Events = c.Events.ToArray();
+        save.color = new float[] { rawImage.color.r, rawImage.color.g, rawImage.color.b };
+        UtilClass.SaveToFile(Application.persistentDataPath + "", "txt", "bingus", save);
+    }
     [System.Serializable]
     struct saveData
     {
