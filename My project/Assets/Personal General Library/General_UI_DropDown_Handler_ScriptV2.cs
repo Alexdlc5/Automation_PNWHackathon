@@ -249,5 +249,10 @@ public class General_UI_DropDown_Handler_ScriptV2 : MonoBehaviour
         childDropDowns.Clear();
     }
 
+    public List<General_UI_DropDown_Handler_ScriptV2> GetChildDropDowns()
+    {
+        return childDropDowns;  
+    }
+
 
 }
