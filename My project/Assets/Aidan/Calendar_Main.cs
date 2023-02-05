@@ -201,4 +201,12 @@ public class Calendar_Main : MonoBehaviour
         EventCreationPopupHandler temp = Instantiate(EventCreationPopupPrefab).GetComponent<EventCreationPopupHandler>();
         temp.returnCall += (input) => { AddEventToCalendar(input); };
     }
+
+    public void RemoveEvent(Calendar_Event eventToRemove)
+    {
+        if (Events.Contains(eventToRemove))
+        {
+            Events.Remove(eventToRemove);
+        }
+    }
 }
