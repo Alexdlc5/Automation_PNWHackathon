@@ -417,7 +417,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouse_position: {x: 0, y: 0}
-  snap_points: []
+  snap_points:
+  - {fileID: 748685728}
+  - {fileID: 1625205224}
+  - {fileID: 684840014}
+  - {fileID: 1054811870}
+  - {fileID: 1034921640}
+  - {fileID: 174757312}
+  - {fileID: 1014320566}
+  - {fileID: 361946151}
+  - {fileID: 473266421}
+  - {fileID: 2123961886}
+  - {fileID: 2440558}
+  - {fileID: 707031373}
+  - {fileID: 1995605895}
+  - {fileID: 709525789}
+  - {fileID: 1887128069}
+  - {fileID: 916280054}
+  - {fileID: 845010724}
+  - {fileID: 769586857}
+  - {fileID: 1079037470}
+  - {fileID: 1904125774}
+  - {fileID: 1566070942}
+  - {fileID: 209462254}
+  - {fileID: 1260339207}
+  - {fileID: 2059060757}
+  - {fileID: 562958192}
+  - {fileID: 1951825492}
+  - {fileID: 1677352408}
+  - {fileID: 1006371430}
+  - {fileID: 161190620}
+  - {fileID: 1389931623}
+  - {fileID: 430456519}
   tasks: []
   is_task_held: 0
   task: {fileID: 7212215331361100105, guid: 906e62cf360eeff4597293285f00d999, type: 3}
@@ -1235,7 +1266,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000051690706}
+  m_AnchoredPosition: {x: 0, y: -0.000022942482}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &361946151
@@ -5482,7 +5513,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2146930516}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9998723
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
