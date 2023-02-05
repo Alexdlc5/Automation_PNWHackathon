@@ -18,7 +18,12 @@ public class New_Task : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     }
     void instantiateTask()
     {
-        Instantiate(task, spawn_location, transform.rotation, canvas.transform);
+        if (!manager.GetComponent<Mouse_Manager>().is_task_held)
+        {
+            GameObject newtask = Instantiate(task, spawn_location, transform.rotation, canvas.transform);
+            manager.GetComponent<Mouse_Manager>().task = newtask;
+            manager.GetComponent<Mouse_Manager>().is_task_held = true;
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
