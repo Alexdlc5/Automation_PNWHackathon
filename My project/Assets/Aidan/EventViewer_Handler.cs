@@ -28,6 +28,7 @@ public class EventViewer_Handler : MonoBehaviour
 
     public void RemoveThisEvent()
     {
+        Debug.Log("REMOVE EVENT BUTTON CLICKED");
         main.RemoveEvent(reference);
     }
 }
