@@ -41,6 +41,8 @@ public class General_UI_DropDown_Handler_ScriptV2 : MonoBehaviour
     private void Start()
     {
         setup();
+        setUIPositions();
+        setUIPositions();
     }
     bool alreadySetup = false;
     void setup()

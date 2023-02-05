@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Snap_Points
   - Task
+  - Calendar Handler
   layers:
   - Default
   - TransparentFX
