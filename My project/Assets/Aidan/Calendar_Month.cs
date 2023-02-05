@@ -11,4 +11,9 @@ public class Calendar_Month
         Name = name;
         Days = new Calendar_Day[days];
     }
+
+    public int GetNumberOfDays()
+    {
+        return Days.Length;
+    }
 }

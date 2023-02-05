@@ -1,15 +1,52 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Calendar_Main : MonoBehaviour
 {
-    public Dictionary<int, Calendar_Year> Years;
+    public Dictionary<int, Calendar_Year> Years = new Dictionary<int, Calendar_Year>();
     List<Calendar_Event> Events = new List<Calendar_Event>();
+    [SerializeField] GameObject DayNumber;
+    [SerializeField] Vector2 DayNumberOffset = Vector2.zero;
+    [SerializeField] Mouse_Manager mouse_Manager;
+
+    [SerializeField] GameObject Canvas;
+
+    List<GameObject> DayNumbers = new List<GameObject>();
+
+    public int SelectedYear;
+    [Range(1, 12)]
+    public int SelectedMonth;
 
     public void Start()
     {
-        Years.Add(System.DateTime.Today.Year, new Calendar_Year(System.DateTime.Today.Year));
+    }
+
+    bool firstUpdate = true;
+
+    int tempYear;
+    int tempMonth;
+    private void Update()
+    {
+        if (firstUpdate)
+        {
+            firstUpdate = false;
+            SelectedYear = System.DateTime.Today.Year;
+            SelectedMonth = System.DateTime.Today.Month;
+            Years.Add(System.DateTime.Today.Year, new Calendar_Year(System.DateTime.Today.Year));
+            GetYear(SelectedYear);
+            SetupCalendar(SelectedYear);
+
+            tempYear = SelectedYear;
+            tempMonth = SelectedMonth;
+        }
+        if (tempYear != SelectedYear || tempMonth != SelectedMonth)
+        {
+            SetupCalendar(SelectedYear);
+            tempYear = SelectedYear;
+            tempMonth = SelectedMonth;
+        }
     }
 
     public Calendar_Year GetYear(int year)
@@ -45,5 +82,35 @@ public class Calendar_Main : MonoBehaviour
             }
         }
         return returner;
+    }
+
+    public void SetupCalendar(int year)
+    {
+        foreach (GameObject go in DayNumbers)
+        {
+            Destroy(go);
+        }
+        DayNumbers.Clear();
+
+        Calendar_Year SelYear = GetYear(year);
+        Calendar_Month SelMonth = SelYear.GetMonth(SelectedMonth);
+
+        for (int i = 0; i < mouse_Manager.snap_points.Length; i++)
+        {
+            if (i < SelMonth.GetNumberOfDays())
+            {
+                mouse_Manager.snap_points[i].SetActive(true);
+                GameObject temp = Instantiate(DayNumber);
+                temp.transform.parent = Canvas.transform;
+                temp.GetComponent<TMP_Text>().text = (i + 1).ToString();
+                temp.transform.position = mouse_Manager.snap_points[i].transform.position;
+                temp.transform.position += new Vector3(DayNumberOffset.x, DayNumberOffset.y, 0);
+                DayNumbers.Add(temp);
+            }
+            else
+            {
+                mouse_Manager.snap_points[i].SetActive(false);
+            }
+        }
     }
 }

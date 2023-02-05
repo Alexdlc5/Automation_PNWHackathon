@@ -28,4 +28,9 @@ public class Calendar_Year
                 };
     }
 
+    public Calendar_Month GetMonth(int month)
+    {
+        return Months[month - 1];
+    }
+
 }
