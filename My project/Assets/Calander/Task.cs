@@ -6,15 +6,15 @@ public class Task : MonoBehaviour
 {
     
     [SerializeField] private int priority = 0;
-    [SerializeField] private string name = "";
+    [SerializeField] private string taskName = "";
     [SerializeField] private float time = 0;
     [SerializeField] private string description = "";
     [SerializeField] private int timeLeft = 0;
     // Start is called before the first frame update
-    public Task(int priority, string name, float time, string description, int timeLeft)
+    public Task(int priority, string taskName, float time, string description, int timeLeft)
     {
         this.priority = priority;
-        this.name = name;
+        this.taskName = taskName;
         this.time = time;
         this.description = description;
         this.timeLeft = timeLeft;
@@ -25,9 +25,9 @@ public class Task : MonoBehaviour
         this.priority = priority;
     }
 
-    public void setName(string name)
+    public void settaskName(string taskName)
     {
-        this.name = name;
+        this.taskName = taskName;
     }
 
     public void setTime(float time)
@@ -50,9 +50,9 @@ public class Task : MonoBehaviour
         return priority;
     }
 
-    public string getName()
+    public string gettaskName()
     {
-        return name;
+        return taskName;
     }
 
     public float getTime()
