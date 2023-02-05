@@ -7,6 +7,7 @@ public class SaveAndQuit : MonoBehaviour
 {
     public Calendar_Main c;
     public RawImage rawImage;
+    public Backround_Color backroundColor;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,9 @@ public class SaveAndQuit : MonoBehaviour
         c.Events.AddRange(save.Events);
         Color temp = new Color(save.color[0], save.color[1], save.color[2]);
         rawImage.color = temp;
+        backroundColor.sliders[0].value = save.color[0];
+        backroundColor.sliders[1].value = save.color[1];
+        backroundColor.sliders[2].value = save.color[2];
     }
 
     // Update is called once per frame
