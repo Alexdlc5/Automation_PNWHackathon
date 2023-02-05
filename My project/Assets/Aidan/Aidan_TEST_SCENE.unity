@@ -935,7 +935,7 @@ GameObject:
   - component: {fileID: 343195575}
   - component: {fileID: 343195574}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Remove Task
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1602,7 +1602,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Add Event
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3712,7 +3712,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Remove Event
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3935,7 +3935,7 @@ GameObject:
   - component: {fileID: 1036672657}
   - component: {fileID: 1036672656}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Add Event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4844,7 +4844,7 @@ GameObject:
   - component: {fileID: 1406548097}
   - component: {fileID: 1406548096}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Remove Event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7330,7 +7330,7 @@ GameObject:
   - component: {fileID: 2147288587}
   - component: {fileID: 2147288586}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Add Task
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
