@@ -47,6 +47,8 @@ public class TaskScrollView_Manager : MonoBehaviour
             GameObject tempOB = Instantiate(prefab);
             tempOB.transform.SetParent(scrollviewHandler.ChildrenObjectHolder.transform);
             General_UI_DropDown_Handler_ScriptV2 tempDH = tempOB.GetComponent<General_UI_DropDown_Handler_ScriptV2>();
+            EventViewer_Handler EVH = tempOB.GetComponent<EventViewer_Handler>();
+            EVH.setup(e);
             scrollviewHandler.addToChildDropDowns(tempDH);
         }
     }
