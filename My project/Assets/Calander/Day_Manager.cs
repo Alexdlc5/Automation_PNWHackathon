@@ -8,7 +8,7 @@ using TMPro;
 public class Day_Manager : MonoBehaviour
 {
     public TextMeshProUGUI display;
-    [SerializeField]private int current_day = 1;
+    public int current_day = 1;
     public Calendar_Main calender_main;
     public void setCurrentDay(int day)
     {
