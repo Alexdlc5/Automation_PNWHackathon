@@ -22,7 +22,8 @@ public class TaskScrollView_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (localSelectedDay != day_Manager.current_day)
+        Calendar_Date date = new Calendar_Date(day_Manager.current_day, calendar_Main.SelectedMonth, calendar_Main.SelectedYear);
+        if (localSelectedDay != day_Manager.current_day || eventCount != calendar_Main.GetEventsOnDate(date).Count)
         {
             localSelectedDay = day_Manager.current_day;
 
@@ -37,6 +38,7 @@ public class TaskScrollView_Manager : MonoBehaviour
         }
     }
 
+    int eventCount = 0;
     void loadEvents()
     {
         Calendar_Date date = new Calendar_Date(day_Manager.current_day, calendar_Main.SelectedMonth, calendar_Main.SelectedYear);
