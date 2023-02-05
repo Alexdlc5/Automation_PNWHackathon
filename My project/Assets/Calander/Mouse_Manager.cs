@@ -46,13 +46,13 @@ public class Mouse_Manager : MonoBehaviour
                 task.transform.position = Camera.main.WorldToScreenPoint(new Vector2(mouse_position.x + .2f, mouse_position.y - .2f));
             }
             //no task held and user trys to pickup a task
-            if (Input.GetMouseButtonDown(0) && !is_task_held)
-            {
-                task = closest_task;
-                is_task_held = true;
-            }
-            //task held and user trys to drop task
-            else if (Input.GetMouseButtonDown(0) && is_task_held && over_point)
+            //if (Input.GetMouseButtonDown(0) && !is_task_held)
+            //{
+            //    task = closest_task;
+            //    is_task_held = true;
+            //}
+            //task held and user trys to drop task, change to an if from an else if
+             if (Input.GetMouseButtonDown(0) && is_task_held && over_point)
             {
                 if (closest_point != null)
                 {
