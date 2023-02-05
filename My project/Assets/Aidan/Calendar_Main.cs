@@ -127,4 +127,14 @@ public class Calendar_Main : MonoBehaviour
     {
         return NumberOfActiveDays;
     }
+
+    public void IncreaseMonth()
+    {
+        SelectedMonth = Mathf.Clamp(SelectedMonth + 1, 1, 12);
+    }
+
+    public void DecreaseMonth()
+    {
+        SelectedMonth = Mathf.Clamp(SelectedMonth - 1, 1, 12);
+    }
 }
