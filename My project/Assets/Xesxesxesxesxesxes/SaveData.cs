@@ -9,7 +9,16 @@ public class SaveData
     float[] color;
     public SaveData(List<Calendar_Event> Events, float[] color)
     {
-        //this.events = Events;
+        this.events = Events;
+
+        //Name = name;
+        //Description = decription;
+        //Location = location;
+        //public int Year;
+        //public int Month;
+        //public int Day;
+
+
         this.color = color;
     }
 }
