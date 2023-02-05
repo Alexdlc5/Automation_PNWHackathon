@@ -5813,7 +5813,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2146930516}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999949
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7658,7 +7658,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1357254467}
         m_TargetAssemblyTypeName: Calendar_Main, Assembly-CSharp
         m_MethodName: AddNewEventRequest
         m_Mode: 1
