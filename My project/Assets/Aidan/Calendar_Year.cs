@@ -12,7 +12,7 @@ public class Calendar_Year
     public Calendar_Year(int year)
     {
         Year = year;
-        int febDays = (year % 4 == 0 ? 29 : 28);
+        int febDays = getFebDays(year);
         Months = new Calendar_Month[12]{
             new Calendar_Month("January", 31),
             new Calendar_Month("February", febDays),
@@ -37,6 +37,11 @@ public class Calendar_Year
     public int GetYear()
     {
         return Year;
+    }
+
+    int getFebDays(int year)
+    {
+        return ((year % 4 == 0) && !(year % 100 == 0) || (year % 4 == 0) && (year % 400 == 0)) ? 29 : 28;
     }
 
 }
