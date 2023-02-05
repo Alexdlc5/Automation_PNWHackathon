@@ -1355,7 +1355,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00023276164}
+  m_AnchoredPosition: {x: 0, y: 0.059276816}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &361946151
@@ -5570,7 +5570,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2146930516}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999907
+  m_Size: 0.9968919
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6637,7 +6637,7 @@ MonoBehaviour:
   MonthText: {fileID: 1231305981}
   YearText: {fileID: 820759800}
   Canvas: {fileID: 2075421604}
-  EventCreationPopupPrefab: {fileID: 6944996811806575136, guid: 52f3b63b0cf9d7f42875785b684c245f, type: 3}
+  EventCreationPopupPrefab: {fileID: 6944996811806575136, guid: 13cf2a950167d0c4ebebfe7961186394, type: 3}
   SelectedYear: 2023
   SelectedMonth: 1
 --- !u!4 &1357254468
