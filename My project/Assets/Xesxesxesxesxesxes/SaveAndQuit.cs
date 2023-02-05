@@ -11,7 +11,10 @@ public class SaveAndQuit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        saveData save = UtilClass.LoadFromFile<saveData>(Application.persistentDataPath, "txt", "bingus", false);
+        c.Events.AddRange(save.Events);
+        Color temp = new Color(save.color[0], save.color[1], save.color[2]);
+        rawImage.color = temp;
     }
 
     // Update is called once per frame
@@ -22,18 +25,20 @@ public class SaveAndQuit : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             saveData save;
-            save.Events = c.Events;
-            save.color = rawImage.color;
+            save.Events = c.Events.ToArray();
+            save.color = new float[] { rawImage.color.r, rawImage.color.g, rawImage.color.b };
             UtilClass.SaveToFile(Application.persistentDataPath + "", "txt", "bingus", save);
             //SaveSystem.Save(c.Events, new float[]{rawImage.color.r, rawImage.color.g, rawImage.color.b}  );
             Application.Quit();
         }
     }
 
+    [System.Serializable]
     struct saveData
     {
-        public List<Calendar_Event> Events;
-        public Color color;
+        public Calendar_Event[] Events;
+        public float[] color;
+        
 
        
     }

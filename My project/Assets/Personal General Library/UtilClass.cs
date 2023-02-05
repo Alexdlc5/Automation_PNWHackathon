@@ -208,6 +208,7 @@ public static class UtilClass
             fileStream = new FileStream(path, FileMode.CreateNew);
         }
         binaryFormatter.Serialize(fileStream, graph);
+        fileStream.Close();
     }
     
     public static TLoadObject LoadFromFile<TLoadObject>(string DirectoryPath, string FileType, string FileName, bool AutoErrorHandling)
@@ -239,8 +240,10 @@ public static class UtilClass
                 //send file to errorFoder
                 SendFileToErrorFolder(FullFilePath);
             }
+            fileStream.Close();
             return default(TLoadObject);
         }
+        fileStream.Close();
         return returner;
     }
 
